@@ -1,0 +1,8 @@
+<div class="plates">
+  <div class="plates__head">
+    <h2>Wähle eine Platine</h2>
+  </div>
+  <div class="plate" *ngFor="let plate of plates" (click)="selectPlate(plate)">
+    <img src="{{plate.imagePath}}" alt="{{plate.name}}" />
+  </div>
+</div>
